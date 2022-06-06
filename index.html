@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>7 cudów świata</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="top"></div>
+    <nav class="navbar">
+        <a href="index.html" class="title">7 Cudów Świata</a>
+        <br id="enter"/>
+        <ul class="links">
+            <li><a href="podstrony/galeria/index.html">Galeria</a></li>
+            <li><a href="#top">Informacje</a></li>
+            <li><a href="#tabela">Tabela</a></li>
+            <li><a style="cursor: pointer;" class="form" onclick="SwitchRateForm();">Formularz</a></li>
+        </ul>
+    </nav>
+    <br/>
+    <div id="informacje">
+        <p>Siedem cudów świata (starożytnego) – lista najbardziej znanych budowli w starożytności. Była swego rodzaju przewodnikiem turystycznym dla podróżników starożytności, którzy chcieli zobaczyć najbardziej sławne i znane miejsca. Wzorowane na niej są różne inne listy (siedmiu) cudów świata. Nawiązuje do nich też pojęcie ósmego cudu świata.</p>
+    </div>
+    <br/>
+    <div id="tabela">
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th><h1>Cud</h1></th>
+                    <th><h1>Data powstania</h1></th>
+                    <th><h1>Data zniszczenia</h1></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="podstrony/cud1/index.html">Piramida Cheopsa</a></td>
+                    <td>2575 p.n.e.</td>
+                    <td>Wciąż istnieje</td>
+                    <td class="link" onclick='location.href="podstrony/cud1/index.html"'><a>Czytaj więcej...</a></td>
+                </tr>
+                <tr>
+                    <td><a href="podstrony/cud2/index.html">Wiszące ogrody Semiramidy</a></td>
+                    <td>600 p.n.e.</td>
+                    <td>I wiek p.n.e.</td>
+                    <td class="link" onclick='location.href="podstrony/cud2/index.html"'><a>Czytaj więcej...</a></td>
+                </tr>
+                <tr>
+                    <td><a href="podstrony/cud3/index.html">Świątynia Artemidy w Efezie</a></td>
+                    <td>560 p.n.e.</td>
+                    <td>III wiek n.e.</td>
+                    <td class="link" onclick='location.href="podstrony/cud3/index.html"'><a>Czytaj więcej...</a></td>
+                </tr>
+                <tr>
+                    <td><a href="podstrony/cud4/index.html">Posąg Zeusa w Olimpii</a></td>
+                    <td>435-430 p.n.e.</td>
+                    <td>V-VI wiek n.e.</td>
+                    <td class="link" onclick='location.href="podstrony/cud4/index.html"'><a>Czytaj więcej...</a></td>
+                </tr>
+                <tr>
+                    <td><a href="podstrony/cud5/index.html">Mauzoleum w Halikarnasie</a></td>
+                    <td>353 p.n.e.</td>
+                    <td>1494 n.e.</td>
+                    <td class="link" onclick='location.href="podstrony/cud5/index.html"'><a>Czytaj więcej...</a></td>
+                </tr>
+                <tr>
+                    <td><a href="podstrony/cud6/index.html">Kolos Rodyjski</a></td>
+                    <td>281 p.n.e.</td>
+                    <td>224 p.n.e.</td>
+                    <td class="link" onclick='location.href="podstrony/cud6/index.html"'><a>Czytaj więcej...</a></td>
+                </tr>
+                <tr>
+                    <td><a href="podstrony/cud7/index.html">Latarnia morska na Faros</a></td>
+                    <td>280-279 p.n.e.</td>
+                    <td>1303-1480 n.e.</td>
+                    <td class="link" onclick='location.href="podstrony/cud7/index.html"'><a>Czytaj więcej...</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="rateForm">
+        <div class="star-widget">
+            <div class="title">
+                <span id="close" onclick="SwitchRateForm()">x</span>
+                <p>Jak oceniasz naszą stronę?</p>
+            </div>
+            <input type="radio" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+            <form action="#">
+                <header id="rateHeader"></header>
+                <div class="textarea">
+                    <textarea cols="30" placeholder="Podziel się z nami swoją opinią"></textarea>
+                </div>
+                <div class="btn">
+                    <button type="submit" id="rateSubmit">Prześlij</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">© Stanisław Czajka kl. 1tc</div>
+</body>
+
+</html>
